@@ -8,6 +8,7 @@ body{
     font-family:Arial, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+    background-color: #EDF4F2;
 }
 
 header{
@@ -105,33 +106,80 @@ border-radius: 20px;
 }
 
 #about, #projects, #contact{
-    background-color:#f4f4f4;
-    padding:20px;
+    /* background-color:#ffffff; */
+    padding:40px;
     border-radius:10px;
+    margin-bottom: 2rem;
+    box-shadow:0 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.about-section, .projects-section{
+    text-align: center;
+}
+.about-section h2, .projects-section h2, .contact-section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about-section p{
+    padding: 0 6rem;
+}
+.projects-section .project-gallery{
+width: 100%;
+text-align: start;
+padding: 0 6rem;
+}
+.projects-section .project-gallery h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-section{
+
+    text-align: center;
 }
 .project{
     margin:15px 0;
 }
-footer{
-    background:#333;
-    color:#fff;
-    border:none;
-    padding:10px;
-    cursor:pointer;
-}
-button:hover{
-    background-color:#555;
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #31473A;
+    border-radius:5px;
+margin: 15px 0;
+color: #fff;
+font-weight: 600;
+
+
 }
 form{
-    display:flex;
-    flex-direction:column;
+padding: 0 6rem;
+
+   width: 100%;
+   text-align: left;
+
 }
 form label{
     margin:10x 0 5px;
 }
 form input, form textarea{
+    display: block;
+    width: 100%; 
     padding:10px;
-    margin-bottom:10px;
+    margin-bottom:20px;
     border:1px solid #ccc;
     border-radius:5px;
+    resize: none;
+}
+form input:focus , form textarea:focus{
+    border: none;
+    outline-color: #31473A;
+}
+footer{
+    background:#31473A;
+    color:#fff;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    text-align: center;
+    margin-top: 4rem;
 }
