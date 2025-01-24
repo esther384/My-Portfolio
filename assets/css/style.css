@@ -20,6 +20,10 @@ header{
     justify-content: space-between;
     
 }
+
+/* @media (width <= 730px) {
+    
+}} */
 .port{
    border-radius: 4px;
 cursor: pointer;
@@ -68,6 +72,7 @@ section{
     border-right: 2px solid #31473A;
     animation: typing 6s steps(20,end) infinite, blink 0.5s step-end infinite;
 }
+
 @keyframes typing {
     from{width: 0;}
     to{width: 23ch;}
@@ -90,6 +95,7 @@ section{
     margin-bottom: 10px;
 
 }
+
 #home button{
     border: 0;
     background-color: #31473A;
@@ -122,6 +128,7 @@ border-radius: 20px;
 .about-section p{
     padding: 0 6rem;
 }
+/* start here */
 .projects-section .project-gallery{
 width: 100%;
 text-align: start;
@@ -183,3 +190,72 @@ footer{
     text-align: center;
     margin-top: 4rem;
 }
+@media (max-width: 730px) {
+    header{
+       
+        padding: 10px 2rem;
+       
+        justify-content: center;
+        flex-direction: column;
+    } 
+
+    #home{
+        justify-content: start;
+        align-items: center;
+        margin-top: 2rem;
+        flex-direction: column;
+
+         h1{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 14px;
+          } 
+          img{
+   
+            width: 200px;
+            height: 300px;
+           margin-top: 1rem;
+            
+            }
+    }
+    #about, #projects, #contact{
+        /* background-color:#ffffff; */
+        padding:5px 20px;
+        border-radius:10px;
+        margin-bottom: 2rem;
+        box-shadow:0 2px 2px 1px rgba(0, 0, 0, .1);
+    }
+    .about-section, .projects-section{
+        text-align: start;
+    }
+    .about-section h2, .projects-section h2, .contact-section h2{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .about-section p{
+        padding: 0 0;
+    }
+    .projects-section{
+        padding: 0 10px;
+
+    }
+    .projects-section .project-gallery{
+        width: 100%;
+        text-align: start;
+        padding: 0 0;
+    }
+    form{
+        padding: 0 10px;
+        
+           width: 100%;
+           text-align: left;
+        
+        }
+}
+@media ( width <= 300px){
+   #home h1{
+        font-size: 0.9rem;
+    }
+}
+    
