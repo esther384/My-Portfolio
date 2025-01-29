@@ -1,81 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet"href="../assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h2>My <span class="port">Portfolio </span></h2>
-        <nav>
-            <ul>
-                <li><a href="#home">
-            Home
-        </a></li>
-            <li><a href="#about">
-            About
-                </a></li>
-                <li><a href="#projects"> 
-            Projects    
-                </a></li>
-                <li><a href="#contact">
-            Contact
-                </a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eno Sunday Esther | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link rel="stylesheet" href="assets/css/responsivelayout.css" />
+  </head>
+  <body>
+    <!-- Glassmorphism Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="profile">
+          <img
+            src="../assets/images/svg.svg"
+            alt="Profile"
+            class="profile-img"
+          />
+          <h3>Eno Sunday Esther</h3>
+          <p>Web Developer</p>
+        </div>
+        <nav class="side-nav">
+          <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="#about" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+          </a>
+          <a href="#skills" class="nav-item">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+          </a>
+          <a href="#projects" class="nav-item">
+            <i class="fas fa-project-diagram"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#contact" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
         </nav>
-    </header>
-
-    <section id="home"class="home-section">
-        <div class="welcomediv">
-
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! i'm Eno Sunday Esther, a web developer.</p>
-            <button><a  href="#projects">
-               See My Work
-            </a></button>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="imgdiv">
-            <div class="imgbg"></div>
-         <img src="../assets/images/svg.svg" alt="">
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="parent_page">
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <button class="menu-toggle" title="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <h2>Portfolio</h2>
+      </nav>
+
+      <!-- Home Section -->
+      <section id="home" class="section1">
+        <div class="hero">
+          <h1 class="animated-text">Welcome to My Creative Space</h1>
+          <p class="subtitle">Crafting Digital Experiences with Code</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="cta-primary">View Projects</a>
+            <a href="#contact" class="cta-secondary">Get in Touch</a>
+          </div>
         </div>
-    </section>
-
-    <section id="about"class="about-section">
-        <h2>About Me</h2>
-        <p>i am a passionate web developer with a love for creating fuctional and beautiful websites.I have experience in HTML,CSS, Javascript, and more!</p>       
-    </section>
-
-    <section id="projects"class="projects-section">
-        <h2>My Projects</h2>
-        <div class="project-gallery">
-            <div class="projecct-card">
-                <h3>Project 1</h3>
-                <p>Welcome to my portfolio! This website serves as a personal showcase of my skills, experiences, and creative journey. It is a reflection of my work, achievements, and professional growth. Here, you can explore a collection of my best projects, each designed to demonstrate my expertise in  HTML CSS JAVASCRIPT.
-
-                    Through this portfolio, I aim to provide a deeper understanding of my capabilities and the unique perspective I bring to every project. Whether you're interested in collaborating or simply learning more about my work, I hope this platform gives you a glimpse into my passion and dedication.</p>
+      </section>
+      <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="section">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="titletxt">
+                As a passionate web developer, I thrive on turning complex
+                problems into elegant solutions. With expertise in modern web
+                technologies, I create responsive and user-friendly applications
+                that make a difference. I am committed to writing clean,
+                efficient, and maintainable code while continuously learning and
+                adapting to the ever-evolving tech landscape. Whether it's
+                front-end design, back-end development, or full-stack solutions,
+                I take pride in building seamless digital experiences that
+                enhance user engagement and drive business success. My goal is
+                to craft innovative, scalable, and high-performance web
+                applications that solve real-world challenges.
+              </p>
+              <div class="experience-cards">
+                <div class="exp-card">
+                  <i class="fas fa-code"></i>
+                  <h3>Frontend Development</h3>
+                  <p>Creating responsive and intuitive user interfaces</p>
+                </div>
+                <div class="exp-card">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h3>Mobile-First Design</h3>
+                  <p>Optimizing experiences for all devices</p>
+                </div>
+                <div class="exp-card">
+                  <i class="fas fa-rocket"></i>
+                  <h3>Performance</h3>
+                  <p>Building fast and efficient applications</p>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-card" data-progress="90">
+              <i class="fab fa-html5"></i>
+              <h3>HTML5</h3>
+              <div class="progress-bar">
+                <span class="progress-bar-label">90%</span>
+              </div>
+            </div>
+            <div class="skill-card" data-progress="85">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS3</h3>
+              <div class="progress-bar">
+                <span class="progress-bar-label">85%</span>
+              </div>
+            </div>
+            <div class="skill-card" data-progress="80">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+              <div class="progress-bar">
+                <span class="progress-bar-label">80%</span>
+              </div>
+            </div>
+            <div class="skill-card" data-progress="75">
+              <i class="fab fa-react"></i>
+              <h3>React</h3>
+              <div class="progress-bar">
+                <span class="progress-bar-label">75%</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="/assets/images/ecom.jpg" alt="Project 1" />
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  A full-featured online shopping platform with cart
+                  functionality and payment integration.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Css</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="/assets/images/app.jpg" alt="Project 2" />
+              </div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>
+                  A collaborative task management solution with real-time
+                  updates and team features.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>Css</span>
+                  <span>Javascript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#" class="project-link"
+                    ><i class="fab fa-github"></i> Source Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img src="/assets/images/car.jpg" alt="Car Rental Service" />
+              </div>
+              <div class="project-content">
+                <h3>Car Rental Service</h3>
+                <p>
+                  A seamless car rental platform that allows users to book and
+                  manage car rentals effortlessly.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>Css</span>
+                  <span>Javascript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="/assets/images/food.jpg" alt="Food Recipe App" />
+              </div>
+              <div class="project-content">
+                <h3>Food Recipe App</h3>
+                <p>
+                  A delightful food recipe app with step-by-step guides,
+                  ingredient tracking, and user ratings.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>Css</span>
+                  <span>Javascript</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="/assets/images/learning.jpg"
+                  alt="E-Learning Platform"
+                />
+              </div>
+              <div class="project-content">
+                <h3>E-Learning Platform</h3>
+                <p>
+                  An interactive platform offering courses, quizzes, and
+                  certifications for lifelong learning.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Css</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>email@example.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 234 567 890</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>New York, NY</p>
+              </div>
+            </div>
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" required />
+                <label for="name">Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" required />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </section>
+        <!-- Previous HTML content remains the same until the end of the contact section -->
+
+        <!-- Floating Illustrations -->
+        <div class="floating-illustrations">
+          <div class="illustration" id="ill-1">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#00b894"
+                d="M47.1,-57.5C61.9,-47.7,75.3,-33.5,79.5,-16.4C83.7,0.7,78.8,20.8,68.1,35.5C57.4,50.2,41,59.5,23.4,65.2C5.8,70.9,-13,73,-29.9,67.2C-46.8,61.4,-61.8,47.7,-69.1,30.5C-76.4,13.3,-76,-7.5,-69.2,-25.1C-62.4,-42.7,-49.2,-57.2,-34.3,-66.8C-19.3,-76.5,-2.6,-81.4,12.4,-77.1C27.4,-72.8,32.3,-67.3,47.1,-57.5Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+          </div>
+          <div class="illustration" id="ill-2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#0984e3"
+                d="M54.6,-67.9C71.1,-55.7,85,-37.9,89.3,-17.7C93.6,2.4,88.3,24.9,77.4,43.5C66.5,62.1,50,76.8,30.7,82.8C11.4,88.8,-10.7,86,-31.1,78.3C-51.5,70.6,-70.2,58,-79.7,39.8C-89.2,21.6,-89.5,-2.3,-82.4,-22.9C-75.3,-43.5,-60.8,-60.8,-43.5,-72.6C-26.2,-84.4,-6.1,-90.7,12.8,-87.4C31.7,-84.1,38.1,-80.1,54.6,-67.9Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+          </div>
         </div>
-    </section>
 
-    <section id="contact"class="contact-section">
-        <h2>Contact Me</h2>
-        <form> 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" requied>
-            <label for="message">Message:</label>
-            <textarea id="message"name="message"required rows="10"></textarea>
-            <button type="submit">Send</button>
+        <!-- Footer -->
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Eno Sunday Esther</h3>
+            <p>Creating digital experiences that matter.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
 
-        </form>
-    </section>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
 
-    <footer>
-        <p>&copy Copy right, 2024 Esther </p>
-    </footer>
-    
-</body>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li>Web Development</li>
+              <li>UI/UX Design</li>
+              <li>Mobile Development</li>
+              <li>Technical Consulting</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Stay updated with my latest projects and tech articles.</p>
+            <form class="footer-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Eno Sunday Esther. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Add smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Animate illustrations on scroll
+      window.addEventListener("scroll", () => {
+        const illustrations = document.querySelectorAll(".illustration");
+        illustrations.forEach((ill) => {
+          const rotation = window.scrollY * 0.1;
+          ill.style.transform = `rotate(${rotation}deg)`;
+        });
+      });
+    </script>
+  </body>
+  <script src="assets/main.js"></script>
 </html>

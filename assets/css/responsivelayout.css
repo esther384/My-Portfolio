@@ -1,0 +1,261 @@
+/* Responsive Styles */
+
+/* Large Screens (1200px and down) */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 2rem 6rem;
+  }
+
+  .about-text .titletxt {
+    padding-right: 150px;
+  }
+
+  .hero {
+    padding: 8rem 4rem;
+  }
+}
+
+/* Medium-Large Screens (1024px and down) */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .parent_page {
+    margin-left: 220px;
+  }
+
+  .main-content {
+    padding: 2rem 4rem;
+  }
+
+  .hero {
+    padding: 6rem 3rem;
+  }
+
+  .animated-text {
+    font-size: 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Tablets (768px and down) */
+@media (max-width: 768px) {
+  /* Sidebar & Navigation */
+  .sidebar {
+    transform: translateX(-100%);
+    width: 250px;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .parent_page {
+    margin-left: 0;
+  }
+  .section {
+    padding: 2rem 0;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: 2rem;
+    padding-top: 80px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+
+  .animated-text {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* About Section */
+  .about-text .titletxt {
+    padding-right: 0;
+  }
+
+  .experience-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .contact-info {
+    order: 2;
+  }
+
+  .contact-form {
+    order: 1;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Mobile Devices (480px and down) */
+@media (max-width: 480px) {
+  /* Main Content */
+  .main-content {
+    padding: 1rem;
+    padding-top: 70px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .animated-text {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects Section */
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-tags {
+    gap: 0.5rem;
+  }
+
+  .project-tags span {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Floating Illustrations */
+  .illustration {
+    width: 150px;
+    height: 150px;
+  }
+  #ill-1 {
+    top: 10%;
+    right: -50px;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  #ill-2 {
+    bottom: 2%;
+    left: 0px;
+    animation: float 4s ease-in-out infinite reverse;
+  }
+}
+
+/* Small Mobile Devices (360px and down) */
+@media (max-width: 360px) {
+  .animated-text {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .exp-card {
+    padding: 1.5rem;
+  }
+}
